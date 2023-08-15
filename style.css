@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&family=Noto+Sans:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.cabecalho{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 20% 20% 20%;
+    grid-template-areas: ". . vermelho . ."
+                         ". azul . amarelo ."
+                         ". . verde . .";
+    grid-gap: 0px 10px;
+}
+
+.card__column__up{
+    padding: 10px;
+    background-color: whitesmoke;
+    grid-area: vermelho;
+    height: 150px;
+    border-radius: 5px;
+    border-top: 2px solid red;
+    box-shadow: 2px 2px 10px gray;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.card__column__down{
+    padding: 10px;
+    background-color: whitesmoke;
+    grid-area: verde;
+    height: 150px;
+    border-radius: 5px;
+    border-top: 2px solid green;
+    box-shadow: 2px 2px 10px gray;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.card__row__left{
+    padding: 10px;
+    background-color: whitesmoke;
+    grid-area: azul;
+    height: 150px;
+    border-radius: 5px;
+    border-top: 2px solid blue;
+    box-shadow: 2px 2px 10px gray;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.card__row__right{
+    padding: 10px;
+    background-color: whitesmoke;
+    grid-area: amarelo;
+    height: 150px;
+    border-radius: 5px;
+    border-top: 2px solid #75C2F6;
+    box-shadow: 2px 2px 10px gray;
+    font-family: 'Noto Sans', sans-serif;
+}
